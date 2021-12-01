@@ -24,23 +24,42 @@ nav {
 }
 
 .nav-list {
+  overflow: hidden;
+  padding: 0 3rem 0 3rem;
+}
+
+.dropdown {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-right: 4rem;
-  padding-left: 4rem;
+  cursor: pointer;
+  transition: all 0.2s;
 }
 
-.nav-list h2:hover(.list) {
-  display: block;
+.dropdown:hover {
+  color: red;
 }
 
-.list {
+.content {
   list-style: none;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  position: absolute;
   display: none;
+}
+
+.content li {
+  display: block;
+  text-align: center;
+}
+
+.content li:hover {
+  color: red;
+}
+
+.nav-list:hover ~ .content {
+  display: block;
 }
