@@ -58,7 +58,7 @@ header {
 
 header.nav {
   padding: 5px 100px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 header.sticky .logo,
@@ -88,9 +88,12 @@ header.sticky li a {
 .nav-list li a {
   color: #151515;
   position: relative;
-  margin: 0 20px;
+  padding: 0 30px;
   text-decoration: none;
   transition: all 0.5s;
+}
+.nav-list li a:hover {
+  color: #a1a1a1;
 }
 
 section {
