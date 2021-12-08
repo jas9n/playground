@@ -8,7 +8,8 @@
 
 body {
   background-color: #151515;
-  color: #ffffff;
+  color: #fff;
+  min-height: 200vh;
 }
 
 h1 {
@@ -42,6 +43,46 @@ li {
   font-family: var(--main-font);
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 100px;
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+.logo {
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.nav-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-list li {
+  position: relative;
+  list-style: none;
+}
+
+.nav-list li a {
+  color: #fff;
+  position: relative;
+  margin: 0 20px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
 section {
   position: relative;
   display: flex;
@@ -60,6 +101,7 @@ section {
   background-color: #ffbdbd;
   color: #151515;
 }
+
 /*shapedivider.app*/
 .wave {
   position: absolute;
@@ -82,7 +124,6 @@ section {
 }
 
 /*haikei.app*/
-
 .spacer {
   aspect-ratio: 960/300;
   width: 100%;
