@@ -4,10 +4,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-  min-height: 100vh;
+  background-color: #151515;
+  color: #fff;
+  min-height: 200vh;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -41,16 +45,6 @@ li {
   font-family: var(--main-font);
 }
 
-.dark {
-  background-color: #151515;
-  color: #fff;
-}
-
-.light {
-  background-color: #fff;
-  color: #151515;
-}
-
 header {
   position: fixed;
   top: 0;
@@ -59,20 +53,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 100px;
+  padding: 25px 75px;
   transition: all 0.5s;
   z-index: 1;
 }
 
-.dark header.nav {
-  background-color: rgba(255, 255, 255, 0.7);
-}
-.light header.nav {
-  background-color: rgba(21, 21, 21, 0.3);
-}
-
 header.nav {
-  padding: 5px 100px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 8px 100px;
 }
 
 header.sticky .logo,
@@ -112,46 +100,34 @@ header.sticky li a {
   color: #a1a1a1;
 }
 
-section {
+.lorem,
+.ipsum,
+.dolor,
+.sit,
+.amet {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 400px;
+  min-height: 600px;
   padding: 100px 20vw;
 }
 
-.blue {
+.lorem {
+  background-color: #e4c7ff;
+  color: #151515;
+}
+.dolor {
   background-color: #c7eeff;
   color: #151515;
 }
-.pink {
+.amet {
   background-color: #ffbdbd;
   color: #151515;
 }
 
 /*shapedivider.app*/
-.wave {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.wave svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 130px;
-}
-
-.wave .shape-fill {
-  fill: #c7eeff;
-}
-
 /*haikei.app*/
 .spacer {
   aspect-ratio: 960/250;
@@ -161,10 +137,18 @@ section {
   background-size: cover;
 }
 
-.dark-waves {
-  background-image: url("/darkwaves.svg");
+.waves1 {
+  background-image: url("/waves1.svg");
 }
 
-.light-waves {
-  background-image: url("/lightwaves.svg");
+.waves2 {
+  background-image: url("/waves2.svg");
+}
+
+.waves3 {
+  background-image: url("/waves3.svg");
+}
+
+.waves4 {
+  background-image: url("/waves4.svg");
 }
