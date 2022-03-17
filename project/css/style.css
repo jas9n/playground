@@ -26,13 +26,11 @@ main {
 main .content {
   width: 70%;
 }
-
 main .content h1 {
   font-size: 3em;
   position: relative;
 }
-
-main .content span {
+main .content h1 span {
   display: block;
 }
 
